@@ -7,9 +7,15 @@ from nltk.stem import PorterStemmer
 ps= PorterStemmer()
 # import nltk
 
-nltk.download('punkt')
-nltk.download('stopwords')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
 
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
 def transform_text(text):
     text= text.lower()
