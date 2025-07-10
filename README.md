@@ -33,6 +33,8 @@ git clone https://github.com/Ashish570raj/SMS-or-Email-Spam-Classifier.git
 cd SMS-or-Email-Spam-Classifier
 pip install -r requirements.txt
 
+```bash
+
 Run the App
 bash
 Copy
