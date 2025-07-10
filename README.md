@@ -32,3 +32,30 @@ Used the popular [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/u
 git clone https://github.com/Ashish570raj/SMS-or-Email-Spam-Classifier.git
 cd SMS-or-Email-Spam-Classifier
 pip install -r requirements.txt
+
+Run the App
+bash
+Copy
+Edit
+streamlit run app.py
+Make sure vectorizer.pkl and model.pkl are present in the root directory.
+
+📌 Example Prediction
+Input: "Congratulations! You've won a $500 gift card. Click here to claim now."
+
+Output: Spam
+
+Input: "Hey, are we still meeting at 6 PM today?"
+
+Output: Not Spam
+
+🛠 Tech Stack
+Python, Pandas, NumPy
+
+NLP (NLTK, Scikit-learn)
+
+TF-IDF Vectorizer
+
+ML Models: MultinomialNB, Logistic Regression, Random Forest, XGBoost
+
+Streamlit
